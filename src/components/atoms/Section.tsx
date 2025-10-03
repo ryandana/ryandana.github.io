@@ -6,9 +6,9 @@ type SectionProps = {
     children: ReactNode
 }
 
-export default function Section({children, className = ""}:SectionProps) {
+export default function Section({children, className = "", id= ""}:SectionProps) {
   return (
-    <section className={`max-w-7xl mx-auto w-full bg-background min-h-dvh lg:px-0 md:px-2 sm:px-4 px-6 ${className}`}>
+    <section id={id} className={`max-w-5xl mx-auto w-full bg-background min-h-dvh lg:px-0 md:px-2 sm:px-4 px-6 ${className}`}>
         {children}
     </section>
   )

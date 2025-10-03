@@ -1,12 +1,11 @@
-import { AnimatedThemeToggler } from "@/components/ui/AnimatedThemeToggler";
-import { Button } from "@/components/atoms/Button";
-import Section from "@/components/atoms/Section";
-import Hero from "@/pages/Hero";
+import HeroPages from "@/pages/HeroPages";
+import AboutPages from "@/pages/AboutPages";
 
 export default function Home() {
-  return (
-    <>
-      <Hero />
-    </>
-  );
+    return (
+        <>
+            <HeroPages/>
+            <AboutPages/>
+        </>
+    );
 }
