@@ -25,7 +25,7 @@ function HeroPages() {
                 <SparklesText sparklesCount={4}><Heading>Ryan Dana</Heading></SparklesText>
             </BlurFade>
             <BlurFade delay={0.2}>
-                <Desc className="md:text-start text-center">Hi!, I am a fullstack developer and like creating modern web applications.</Desc>
+                <Desc className="md:text-start text-center">Hi!, I am a fullstack developer and i love creating modern web applications.</Desc>
             </BlurFade>
             <div className="flex items-center gap-3">
                 <BlurFade delay={0.3}>

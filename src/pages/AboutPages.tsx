@@ -17,13 +17,25 @@ export default function About() {
             <Desc className="max-w-xl text-justify">
               I am a high school IT student at TI Global Badung. I’ve always
               been a tech enthusiast who loves staying up to date with the
-              latest technology. I also have experience participating{" "}
+              latest technology and exploring how it shapes our daily lives. I
+              have hands on experience in web development, API integration, and
+              fullstack projects using JavaScript, TypeScript, and PHP. You
+              can check some of my{" "}
+              <Link
+                className="text-foreground font-semibold underline"
+                href="#projects"
+              >
+                personal projects.
+              </Link>{" "}
+              I also have experience participating in{" "}
               <Link
                 className="text-foreground font-semibold underline"
                 href="#competition"
               >
-                several competitions.
+                several competitions
               </Link>
+              , which helped me develop teamwork, creativity, and
+              problem-solving skills.
             </Desc>
           </BlurFade>
         </div>

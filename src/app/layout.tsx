@@ -1,36 +1,36 @@
-import type {Metadata} from "next";
-import {ThemeProvider} from "next-themes";
-import {Poppins} from "next/font/google";
+import type { Metadata } from "next";
+import { ThemeProvider } from "next-themes";
+import { Poppins } from "next/font/google";
 import "./globals.css";
-import {AnimatedThemeToggler} from "@/components/ui/AnimatedThemeToggler";
-import {ScrollProgress} from "@/components/ui/ScrollProgress";
+import { AnimatedThemeToggler } from "@/components/ui/AnimatedThemeToggler";
+import { ScrollProgress } from "@/components/ui/ScrollProgress";
 
 const poppins = Poppins({
-    subsets: ["latin"],
-    display: "swap",
-    variable: "--font-poppins",
-    weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-poppins",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
 export const metadata: Metadata = {
-    title: "Ryan Dana",
-    description: "Welcome to my Portfolio!",
+  title: "Ryan Dana",
+  description: "Welcome to my Portfolio!",
 };
 
 export default function RootLayout({
-                                       children,
-                                   }: Readonly<{
-    children: React.ReactNode;
+  children,
+}: Readonly<{
+  children: React.ReactNode;
 }>) {
-    return (
-        <html lang="en" suppressHydrationWarning>
-        <body className={`${poppins.variable} antialiased`}>
+  return (
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${poppins.variable} antialiased`}>
         <ThemeProvider attribute={"class"} enableSystem={true}>
-            <ScrollProgress className="top-0"/>
-            {children}
-            <AnimatedThemeToggler className="bg-secondary text-secondary-foreground p-2 rounded-full  cursor-pointer fixed md:top-10 md:right-10 top-5 right-5"/>
+          <ScrollProgress className="top-0" />
+          {children}
+          <AnimatedThemeToggler className="bg-secondary text-secondary-foreground p-2 rounded-full  cursor-pointer fixed top-5 right-5" />
         </ThemeProvider>
-        </body>
-        </html>
-    );
+      </body>
+    </html>
+  );
 }

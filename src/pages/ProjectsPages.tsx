@@ -61,15 +61,15 @@ const projects: ProjectsProps[] = [
 export default function ProjectsPages() {
   return (
     <Section>
-      <div className="mb-12 text-center flex flex-col gap-3">
-        <BlurFade inView>
+      <div className="mb-10 flex flex-col gap-3">
+        <BlurFade inView delay={0.1}>
           <Heading>Featured Projects</Heading>
         </BlurFade>
         <BlurFade inView delay={0.2}>
-          <Desc>Haiiii</Desc>
+          <Desc className="max-w-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error libero ratione ducimus aliquam esse optio.</Desc>
         </BlurFade>
       </div>
-      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {projects.map((project, idx) => (
           <BlurFade inView key={idx} delay={idx * 0.15}>
             <ProjectsCard {...project} />

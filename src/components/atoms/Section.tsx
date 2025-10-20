@@ -8,7 +8,7 @@ type SectionProps = {
 
 export default function Section({children, className = "", id= ""}:SectionProps) {
   return (
-    <section id={id} className={`max-w-5xl mx-auto w-full bg-background lg:px-0 py-12 md:px-2 sm:px-4 px-6 ${className}`}>
+    <section id={id} className={`max-w-5xl mx-auto w-full bg-background lg:px-0 py-12 px-6 ${className}`}>
         {children}
     </section>
   )
