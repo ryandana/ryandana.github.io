@@ -6,5 +6,5 @@ type Heading = {
 };
 
 export default function Heading({ children, className="" }: Heading) {
-  return <h1 className={`md:text-5xl text-3xl font-semibold text-foreground ${className}`}>{children}</h1>;
+  return <h1 className={`md:text-5xl text-3xl font-semibold text-foreground tracking-tight scroll-m-20 text-balance ${className}`}>{children}</h1>;
 }

@@ -13,7 +13,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-    title: "Ryan Portfolio",
+    title: "Ryan Dana",
     description: "Welcome to my Portfolio!",
 };
 
@@ -28,8 +28,7 @@ export default function RootLayout({
         <ThemeProvider attribute={"class"} enableSystem={true}>
             <ScrollProgress className="top-0"/>
             {children}
-            <AnimatedThemeToggler
-                className="bg-secondary text-secondary-foreground p-2 rounded-full  cursor-pointer fixed bottom-10 right-10"/>
+            <AnimatedThemeToggler className="bg-secondary text-secondary-foreground p-2 rounded-full  cursor-pointer fixed md:top-10 md:right-10 top-5 right-5"/>
         </ThemeProvider>
         </body>
         </html>

@@ -25,13 +25,13 @@ function HeroPages() {
                 <SparklesText sparklesCount={4}><Heading>Ryan Dana</Heading></SparklesText>
             </BlurFade>
             <BlurFade delay={0.2}>
-                <Desc>Hi!, I am a fullstack developer and like creating modern web applications.</Desc>
+                <Desc className="md:text-start text-center">Hi!, I am a fullstack developer and like creating modern web applications.</Desc>
             </BlurFade>
             <div className="flex items-center gap-3">
                 <BlurFade delay={0.3}>
 
                     <Link className="flex gap-1 items-center" href="#about">
-                        <Button className="cursor-pointer" variant="default">Scroll for more<IconArrowDown
+                        <Button className="cursor-pointer" variant="default">Download CV<IconArrowDown
                             size={20}/></Button>
                     </Link>
                 </BlurFade>
