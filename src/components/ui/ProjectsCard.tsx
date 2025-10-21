@@ -1,10 +1,12 @@
 "use client";
 
 import Image from "next/image";
-import { Badge } from "@/components/ui/Badge";
+import { Badge } from "@/components/atoms/Badge";
 import { Button } from "@/components/atoms/Button";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import { ProjectsProps } from "@/types/types";
+import Link from "next/link";
+import { IconBrandGithub } from "@tabler/icons-react";
 
 export default function ProjectsCard({
   title,
@@ -47,18 +49,18 @@ export default function ProjectsCard({
           <div className="mt-3 flex flex-wrap gap-2">
             {previewUrl && (
               <Button asChild size="sm" className="gap-2">
-                <a href={previewUrl} target="_blank" rel="noopener noreferrer">
+                <Link href={previewUrl} target="_blank" rel="noopener noreferrer">
                   <ExternalLink className="h-4 w-4" />
                   Preview
-                </a>
-              </Button>
+                </Link>
+              </Button> 
             )}
             {sourceUrl && (
               <Button asChild size="sm" variant="outline" className="gap-2">
-                <a href={sourceUrl} target="_blank" rel="noopener noreferrer">
-                  <Github className="h-4 w-4" />
+                <Link href={sourceUrl} target="_blank" rel="noopener noreferrer">
+                  <IconBrandGithub className="h-4 w-4" />
                   Source
-                </a>
+                </Link>
               </Button>
             )}
           </div>

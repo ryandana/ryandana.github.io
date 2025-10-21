@@ -4,6 +4,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import { AnimatedThemeToggler } from "@/components/ui/AnimatedThemeToggler";
 import { ScrollProgress } from "@/components/ui/ScrollProgress";
+import SocialBubble from "@/components/ui/SocialBubble";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -29,6 +30,7 @@ export default function RootLayout({
           <ScrollProgress className="top-0" />
           {children}
           <AnimatedThemeToggler className="bg-secondary text-secondary-foreground p-2 rounded-full  cursor-pointer fixed top-5 right-5" />
+          <SocialBubble />
         </ThemeProvider>
       </body>
     </html>

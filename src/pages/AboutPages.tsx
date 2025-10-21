@@ -10,11 +10,11 @@ export default function About() {
     <Section id="about" className="flex flex-col py-12">
       <div className="flex w-full justify-between">
         <div className="flex flex-col gap-4">
-          <BlurFade inView>
+          <BlurFade inView delay={0.4}>
             <Heading>About Me!</Heading>
           </BlurFade>
-          <BlurFade inView>
-            <Desc className="max-w-xl text-justify">
+          <BlurFade inView delay={0.6}>
+            <Desc className="text-justify">
               I am a high school IT student at TI Global Badung. I’ve always
               been a tech enthusiast who loves staying up to date with the
               latest technology and exploring how it shapes our daily lives. I
