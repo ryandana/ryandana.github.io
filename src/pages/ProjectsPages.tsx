@@ -20,10 +20,10 @@ const projects: ProjectsProps[] = [
   },
   {
     title: "Naturia",
-    imageSrc: "/images/yandere-searcher.webp",
+    imageSrc: "/images/naturia.png",
     desc: "A lightweight PyQt6 desktop app with a modern glass UI to search wallpapers from Yande.re, Wallhaven, and Unsplash with NSFW filtering and HD previews.",
     badgeFirst: "Website",
-    badgeSecond: "PyQt6",
+    badgeSecond: "Tailwind",
     previewUrl: "https://naturia-kappa.vercel.app",
   },
   {
@@ -38,7 +38,7 @@ const projects: ProjectsProps[] = [
 
 export default function ProjectsPages() {
   return (
-    <Section id="#projects">
+    <Section id="projects">
       <div className="flex justify-between items-center w-full">
         <div className="mb-10 flex flex-col gap-3">
           <BlurFade inView delay={0.1}>
