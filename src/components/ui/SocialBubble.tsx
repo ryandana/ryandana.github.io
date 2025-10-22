@@ -7,8 +7,10 @@ import {
   IconBrandGithub,
   IconBrandLinkedin,
   IconX,
-  IconPhone,
+  IconMail,
+  IconMenu2,
 } from "@tabler/icons-react";
+import { Button } from "../atoms/Button";
 
 interface SocialLink {
   href: string;
@@ -18,19 +20,24 @@ interface SocialLink {
 
 const socialLinks: SocialLink[] = [
   {
-    href: "https://instagram.com/ryandana",
-    icon: <IconBrandInstagram size={22} />,
+    href: "mailto:puturyandana@gmail.com",
+    icon: <IconMail size={35} />,
+    label: "Email",
+  },
+  {
+    href: "https://instagram.com/ryandnp_",
+    icon: <IconBrandInstagram size={35} />,
     label: "Instagram",
   },
   {
-    href: "https://github.com/ryandana",
-    icon: <IconBrandGithub size={22} />,
-    label: "GitHub",
+    href: "https://linkedin.com/in/ryandanaputra",
+    icon: <IconBrandLinkedin size={35} />,
+    label: "LinkedIn",
   },
   {
-    href: "https://linkedin.com/in/ryandana",
-    icon: <IconBrandLinkedin size={22} />,
-    label: "LinkedIn",
+    href: "https://github.com/ryandana",
+    icon: <IconBrandGithub size={35} />,
+    label: "GitHub",
   },
 ];
 
@@ -52,20 +59,19 @@ export default function SocialBubble() {
             href={link.href}
             target="_blank"
             aria-label={link.label}
-            className="bg-secondary text-secondary-foreground p-3 rounded-full shadow-md transition-transform"
           >
-            {link.icon}
+            <Button variant={"secondary"}>{link.icon}</Button>
           </Link>
         ))}
       </div>
 
-      <button
+      <Button
+        variant={"secondary"}
         onClick={() => setOpen(!open)}
         aria-label="Toggle Social Menu"
-        className="bg-secondary text-secondary-foreground p-3 rounded-full shadow-lg transition-transform"
       >
-        {open ? <IconX size={22} /> : <IconPhone size={22} />}
-      </button>
+        {open ? <IconX size={35} /> : <IconMenu2 size={35} />}
+      </Button>
     </div>
   );
 }

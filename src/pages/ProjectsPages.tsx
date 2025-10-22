@@ -1,5 +1,5 @@
 import React from "react";
-import ProjectsCard from "@/components/ui/ProjectsCard";
+import ProjectsCard from "@/components/ui/ProjectCard";
 import { ProjectsProps } from "@/types/types";
 import Section from "@/components/atoms/Section";
 import Heading from "@/components/atoms/Heading";

@@ -5,6 +5,7 @@ import "./globals.css";
 import { AnimatedThemeToggler } from "@/components/ui/AnimatedThemeToggler";
 import { ScrollProgress } from "@/components/ui/ScrollProgress";
 import SocialBubble from "@/components/ui/SocialBubble";
+import Footer from "@/components/ui/Footer";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -31,6 +32,7 @@ export default function RootLayout({
           {children}
           <AnimatedThemeToggler className="bg-secondary text-secondary-foreground p-2 rounded-full  cursor-pointer fixed top-5 right-5" />
           <SocialBubble />
+          <Footer/>
         </ThemeProvider>
       </body>
     </html>

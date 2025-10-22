@@ -7,3 +7,11 @@ export interface ProjectsProps {
   previewUrl?: string;
   sourceUrl?: string;
 }
+
+export interface ExprienceProps{
+  title: string;
+  imageSrc: string;
+  year: string;
+  content: string
+}
+
